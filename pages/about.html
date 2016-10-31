@@ -8,53 +8,18 @@ title : About me
 <body>
 	<div class="wrapper style2">
                                 {% include about.html %}
-        <p> You need a better organisation of this section so that it'll make sense to be linked from the nav bar else remove the dropdown from nav bar and about me links here </p>
-	<p> Also this is redundant from landing page right now </p>
 	</div> 
 	<div id="main" class="wrapper style1">
 		<section class="container">
 			<header class="major">
-				<h2>You need to do a lot with this</h2>
-				<span class="byline">Or maybe not. Decide if you want it at all</span>
+				<h2>Find me on Social Media:</h2>
+				<p>More social links can be added on _config.yml. This line can be removed in pages/about.html</p> 
+				<center><h3 class="title" style="font-size:30px;">
+				{% for social in site.social %}
+                                        	<a class="social-btn" href="{{ social.url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-3x fa-{{ social.title }}-square"></i></a>
+                              	{% endfor %}
+				</h3></center>
 			</header>
-			<div class="row">
-
-				<!-- Content -->
-				
-					<div class="6u">
-						<section>
-							<ul class="style">
-								<li>
-									<span class="fa fa-futbol-o"></span>
-									<h3>Sports</h3>
-									<span>Something sport something something</span>
-								</li>
-								<li>
-									<span class="fa fa-bus"></span>
-									<h3>Hiking</h3>
-									<span> Lalala </span>
-								</li>
-							</ul>
-						</section>
-					</div>
-					<div class="6u">
-						<section>
-							<ul class="style">
-								<li>
-									<span class="fa fa-cogs"></span>
-									<h3>Analytics</h3>
-									<span> alala </span>
-								</li>
-								<li>
-									<span class="fa fa-user-circle-o"></span>
-									<h3>People</h3>
-									<span>Something memory</span>
-								</li>
-							</ul>
-						</section>
-					</div>
-				
-			</div>
 		</section>
 	</div>
 </body>
