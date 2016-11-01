@@ -2,45 +2,24 @@
 layout: default
 ---
 
-<!-- Header -->
+	<!-- header -->
 			<div id="header">
 				<div class="container">
-
 					<!-- Logo -->
 					{% include nav.html %}
 					<!-- Banner -->
 						<div id="banner">
 							<header class="minor" style="background-color: rgba(229, 229, 229,0.3)">
-								<h2>Shriyak Sridhar</h2>
-									<span class="byline">Welcome to my personal website! </span><br><span>I am currently a graduate student at the University of Illinois at Urbana-Champaign pursuing a Masters in Statistics: Analytics concentration. Use this site to get to know more about me or find some useful resources&hellip;</span>
+								<h2 style="text-shadow:2px 2px #000000;">Shriyak Sridhar</h2>
+									<span class="byline" style="text-shadow:2px 2px #000000;">Welcome to my personal website! </span><br>
+									<br><br>
+									<span style="text-shadow:2px 2px #000000;">I am currently a graduate student at the University of Illinois at Urbana-Champaign pursuing a Masters in Statistics: Analytics concentration. Use this site to get to know more about me or find some useful resources&hellip;</span>
 								</header>
 						</div>
 				</div>
 			</div>
-
-		<!-- Featured -->
 			<div class="wrapper style2">
-				<section class="container">
-					<header class="major">
-						<h2>About me</h2>
-						<span class="byline">I strive to utilize data driven methodologies to inspire better decision making.</span>
-					</header>
-					<div class="row no-collapse-1">
-						<section class="4u">
-							<a href="#" class="image feature"><img src="{{ site.baseurl }}/assets/images/pic02.jpg" alt=""></a>
-							<p> A Personal History. My journey so far, some people I have met along the way and things I will hopefully get to do soon.</p>
-						</section>
-						<section class="4u">
-							<a href="#" class="image feature"><img src="{{ site.baseurl }}/assets/images/pic03.jpg" alt=""></a>
-							<p>Professional Experience. My education, work experience and publications.</p>
-						</section>
-						<section class="4u">
-							<a href="#" class="image feature"><img src="{{ site.baseurl }}/assets/images/pic04.jpg" alt=""></a>
-							<p>Technical Projects. A collection of personal projects that I have worked on.</p>
-						</section>
-
-					</div>
-				</section>
+				{% include about.html %}
 			</div>
 
 	{{ content }}

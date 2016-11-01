@@ -1,0 +1,25 @@
+---
+layout: main
+title : About me
+---
+<head>
+	{% include head.html %}
+</head>
+<body>
+	<div class="wrapper style2">
+                                {% include about.html %}
+	</div> 
+	<div id="main" class="wrapper style1">
+		<section class="container">
+			<header class="major">
+				<h2>Find me on Social Media:</h2>
+				<p>More social links can be added on _config.yml. This line can be removed in pages/about.html</p> 
+				<center><h3 class="title" style="font-size:30px;">
+				{% for social in site.social %}
+                                        	<a class="social-btn" href="{{ social.url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-3x fa-{{ social.title }}-square"></i></a>
+                              	{% endfor %}
+				</h3></center>
+			</header>
+		</section>
+	</div>
+</body>
